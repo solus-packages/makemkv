@@ -1,0 +1,60 @@
+<PISI>
+    <Source>
+        <Name>makemkv</Name>
+        <Packager>
+            <Name>Tom Pavlak</Name>
+            <Email>thomas.a.pavlak@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>LGPL-2.0</License>
+        <PartOf>multimedia.video</PartOf>
+        <Summary xml:lang="en">MakeMKV video transcoder</Summary>
+        <Description xml:lang="en">MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>makemkv</Name>
+        <Summary xml:lang="en">MakeMKV video transcoder</Summary>
+        <Description xml:lang="en">MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
+</Description>
+        <PartOf>multimedia.video</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+            <Path fileType="data">/usr/share/MakeMKV/aac-stereo.mmcp.xml</Path>
+            <Path fileType="data">/usr/share/MakeMKV/blues.jar</Path>
+            <Path fileType="data">/usr/share/MakeMKV/default.mmcp.xml</Path>
+            <Path fileType="data">/usr/share/MakeMKV/flac.mmcp.xml</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_chi.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_dan.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_deu.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_dut.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_fra.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_ita.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_jpn.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_nor.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_per.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_pol.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_ptb.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_spa.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/makemkv_swe.mo.gz</Path>
+            <Path fileType="data">/usr/share/MakeMKV/wdtv.mmcp.xml</Path>
+            <Path fileType="data">/usr/share/applications/makemkv.desktop</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/makemkv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/makemkv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/makemkv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/makemkv.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/makemkv.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-30</Date>
+            <Version>1.10.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Tom Pavlak</Name>
+            <Email>thomas.a.pavlak@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
