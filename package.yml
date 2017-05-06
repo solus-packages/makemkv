@@ -1,29 +1,38 @@
 name        : makemkv
-version     : 1.10.4
-release     : 1
+version     : 1.10.5
+release     : 2
 source     :
-    - http://www.makemkv.com/download/makemkv-oss-1.10.4.tar.gz : bacbd6a27ebd67f2e6f6c4356cafb92918d54a8bb15872f694232043039f63c4
-    - http://www.makemkv.com/download/makemkv-bin-1.10.4.tar.gz : bc6f66897c09b0b756b352cc02a092c5b3a9547e4c129b3472ae4c605eff94aa
+    - http://www.makemkv.com/download/makemkv-oss-1.10.5.tar.gz : 4aed3caa587dc206529a2cc00a25bf33e006d7f4854ac2282f5627002b90564d
+    - http://www.makemkv.com/download/makemkv-bin-1.10.5.tar.gz : dd50b4b4e42d5f107356ecd637015b3cbf6c7ce3cdfc450d0995a8e785a95e02
 license     :
     - GPL-2.0
     - LGPL-2.0
+    - Distributable
 component   : multimedia.video
 summary     : MakeMKV video transcoder
 builddeps   :
     - pkgconfig(Qt5Core)
     - pkgconfig(libavcodec)
+strip       : no
 description : |
     MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
 setup      : |
+    tar xvf $sources/makemkv-bin-${version}.tar.gz
     %configure
 build      : |
+    %make
+install    : |
     # build oss package
     %make_install
 
     # build bin package
-    tar xvf $sources/makemkv-bin-${version}.tar.gz
     pushd "makemkv-bin-${version}"
     mkdir tmp
     echo accepted > tmp/eula_accepted
     %make_install
     popd
+
+    # Ensure license is shipped in accordance with redistribution terms
+    # and that the package is unmodified, by not stripping the binaries
+    # See: strip: no
+    install -D -m 00644 makemkv-bin-${version}/src/eula_en_linux.txt $installdir/usr/share/doc/${package}/eula_en_linux.txt
