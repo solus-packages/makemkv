@@ -1,9 +1,9 @@
 name        : makemkv
-version     : 1.10.5
-release     : 2
+version     : 1.10.6
+release     : 3
 source     :
-    - http://www.makemkv.com/download/makemkv-oss-1.10.5.tar.gz : 4aed3caa587dc206529a2cc00a25bf33e006d7f4854ac2282f5627002b90564d
-    - http://www.makemkv.com/download/makemkv-bin-1.10.5.tar.gz : dd50b4b4e42d5f107356ecd637015b3cbf6c7ce3cdfc450d0995a8e785a95e02
+    - http://www.makemkv.com/download/makemkv-oss-1.10.6.tar.gz : ab028ba05364f2d899b76e6a7392c9ef555379de2ef4732e1de27c23fd78d235
+    - http://www.makemkv.com/download/makemkv-bin-1.10.6.tar.gz : 99d68e4e0166c9a4e2dce6638e19cbe312b5981f6e1811ed0987578ceefac3e3
 license     :
     - GPL-2.0
     - LGPL-2.0
