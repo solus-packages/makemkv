@@ -1,21 +1,21 @@
-name        : makemkv
-version     : 1.10.6
-release     : 3
+name       : makemkv
+version    : 1.10.7
+release    : 4
 source     :
-    - http://www.makemkv.com/download/makemkv-oss-1.10.6.tar.gz : ab028ba05364f2d899b76e6a7392c9ef555379de2ef4732e1de27c23fd78d235
-    - http://www.makemkv.com/download/makemkv-bin-1.10.6.tar.gz : 99d68e4e0166c9a4e2dce6638e19cbe312b5981f6e1811ed0987578ceefac3e3
-license     :
+    - https://www.makemkv.com/download/makemkv-oss-1.10.7.tar.gz : be61fcee31dc52944ec7ef440ff8fffbc140d24877e6afb19149c541564eb654
+    - https://www.makemkv.com/download/makemkv-bin-1.10.7.tar.gz : 2b9a9e6fb779bc876371b2f88b23fddad3e92d6449fe5d1541dcd9ad04e01eac
+license    :
     - GPL-2.0
     - LGPL-2.0
     - Distributable
-component   : multimedia.video
-summary     : MakeMKV video transcoder
-builddeps   :
+component  : multimedia.video
+summary    : MakeMKV video transcoder
+description: |
+    MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
+builddeps  :
     - pkgconfig(Qt5Core)
     - pkgconfig(libavcodec)
-strip       : no
-description : |
-    MakeMKV is your one-click solution to convert video that you own into free and patents-unencumbered format that can be played everywhere.
+strip      : no
 setup      : |
     tar xvf $sources/makemkv-bin-${version}.tar.gz
     %configure

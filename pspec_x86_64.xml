@@ -2,8 +2,8 @@
     <Source>
         <Name>makemkv</Name>
         <Packager>
-            <Name>Tom Pavlak</Name>
-            <Email>thomas.a.pavlak@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>GPL-2.0</License>
         <License>LGPL-2.0</License>
@@ -25,6 +25,7 @@
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
             <Path fileType="data">/usr/share/MakeMKV/aac-stereo.mmcp.xml</Path>
             <Path fileType="data">/usr/share/MakeMKV/blues.jar</Path>
+            <Path fileType="data">/usr/share/MakeMKV/blues.policy</Path>
             <Path fileType="data">/usr/share/MakeMKV/default.mmcp.xml</Path>
             <Path fileType="data">/usr/share/MakeMKV/flac.mmcp.xml</Path>
             <Path fileType="data">/usr/share/MakeMKV/makemkv_chi.mo.gz</Path>
@@ -51,12 +52,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2017-06-18</Date>
-            <Version>1.10.6</Version>
+        <Update release="4">
+            <Date>2017-10-03</Date>
+            <Version>1.10.7</Version>
             <Comment>Packaging update</Comment>
-            <Name>Tom Pavlak</Name>
-            <Email>thomas.a.pavlak@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
