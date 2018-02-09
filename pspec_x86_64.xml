@@ -23,25 +23,9 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="data">/usr/share/MakeMKV/aac-stereo.mmcp.xml</Path>
+            <Path fileType="data">/usr/share/MakeMKV/appdata.tar</Path>
             <Path fileType="data">/usr/share/MakeMKV/blues.jar</Path>
             <Path fileType="data">/usr/share/MakeMKV/blues.policy</Path>
-            <Path fileType="data">/usr/share/MakeMKV/default.mmcp.xml</Path>
-            <Path fileType="data">/usr/share/MakeMKV/flac.mmcp.xml</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_chi.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_dan.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_deu.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_dut.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_fra.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_ita.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_jpn.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_nor.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_per.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_pol.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_ptb.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_spa.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/makemkv_swe.mo.gz</Path>
-            <Path fileType="data">/usr/share/MakeMKV/wdtv.mmcp.xml</Path>
             <Path fileType="data">/usr/share/applications/makemkv.desktop</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/makemkv.png</Path>
@@ -52,9 +36,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2017-12-17</Date>
-            <Version>1.10.8</Version>
+        <Update release="6">
+            <Date>2018-02-09</Date>
+            <Version>1.12.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Pierre-Yves</Name>
             <Email>pyu@riseup.net</Email>
